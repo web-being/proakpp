@@ -1,0 +1,19 @@
+<!doctype html>
+{% assign lang=page.lang | default: 'ru' %}
+<html lang="{{ lang }}">
+
+	{% include head.html %}
+
+	<body>
+		{% include header.html %}
+
+		<main class="page-content">
+			<div class="content-centered">
+				{{ content }}
+			</div>
+		</main>
+
+		{% include footer.html %}
+	</body>
+
+</html>

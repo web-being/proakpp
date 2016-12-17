@@ -1,0 +1,20 @@
+---
+layout: default
+ref: index
+lang: en
+---
+
+
+{% include intro.html %}
+{% include about.html %}
+{% include gallery.html %}
+{% include services.html %}
+{% include features.html %}
+{% include cta.html %}
+{% include testimonials.html %}
+{% assign posts=site.posts | where:"lang", lang %}
+{% include articles.html posts=posts%}
+{% include info.html %}
+{% include contacts.html %}
+
+

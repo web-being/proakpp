@@ -83,6 +83,36 @@ h6 {
 
 
 
+.site-header {
+	color: white;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.site-header .centered {
+	position: relative;
+}
+.site-logo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: white;
+	text-decoration: none;
+	font-size: 2rem;
+	font-weight: 900;
+}
+.site-nav {
+	position: absolute;
+	right: 0;
+	color: white;
+}
+.site-nav-link {
+	color: white;
+	text-decoration: none;
+}
+
+
 
 
 .section {
@@ -120,7 +150,29 @@ h6 {
 	text-align: center;
 }
 
+.section-footer {
+	text-align: center;
+}
 
+
+.section--intro {
+	background-image: url('./main.jpg');
+	background-size: cover;
+	background-position: center center;
+	height: 80vh;
+	min-height: 30rem;
+	position: relative;
+}
+
+.section-intro-body {
+	position: absolute;
+	bottom: 0;
+}
+.section-intro-title {
+	text-transform: uppercase;
+	font-size: 2rem;
+	width: 80%;
+}
 
 
 
@@ -197,6 +249,21 @@ h6 {
 
 .section--cta {
     background-image: linear-gradient(to right, rgb(0, 164, 220) 0%, rgb(85, 77, 153) 100%);
+}
+
+.section--info {
+    background-image: linear-gradient(to right, #237794 0%, #8b87ac 100%);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.section--contacts {
+	padding: 0;
+}
+.section-map {
+	width: 100%;
+	height: 40vh;
+	min-height: 30rem;
 }
 
 

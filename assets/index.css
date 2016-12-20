@@ -58,13 +58,16 @@ h6 {
 	cursor: pointer;
 	text-decoration: none;
 }
-
+.button--outline {
+	border-color: rgb(255, 255, 255);
+	color: white;
+}
 .button--white {
 	background: rgb(255, 255, 255);
 	border-color: rgb(255, 255, 255);
 	color: rgb(0, 164, 220);
 }
-.button--white:hover, .button--white:active {
+.button:hover, .button:active {
 	background: rgb(0, 164, 220);
 	border-color: rgb(0, 164, 220);
 	color: rgb(255, 255, 255);
@@ -130,7 +133,7 @@ h6 {
 	max-width: 40rem;
 	margin: auto;
 }
-.section-header-icon {
+.section-header .section-header-icon {
 	font-size: 2.4rem;
 }
 .section-title {
@@ -333,18 +336,79 @@ h6 {
 .swiper-container {
 	height: 13rem;
 }
+.section--testimonials .swiper-container {
+	overflow: visible;
+}
+.section--testimonials {
+	overflow: hidden;
+}
 
 
 
 .section--contacts {
 	padding: 0;
+	height: 40vh;
+	min-height: 30rem;
+	position: relative;
 }
 .section-map {
 	width: 100%;
-	height: 40vh;
-	min-height: 30rem;
+	height: 100%;
+}
+.section-map-title {
+	font-weight: 200;
+	margin: .5rem 0;
+}
+.section-map-title strong {
+	font-weight: 900;
+}
+.section-map-subtitle {
+	font-weight: 900;
+	font-size: 1rem;
+	margin: .75rem 0 0;
+}
+.section-map-address {
+	font-style: normal;
+}
+.section-map-content a, .section-map-content a:visited {
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.section-map-content a:hover {
+	border-bottom: 1px solid rgba(0,0,0,1);
+}
+.section-map-content p {
+	margin: .25rem 0;
 }
 
+.section--contacts .centered {
+	position: relative;
+}
+.section-contact-form {
+	position: absolute;
+	min-width: 13rem;
+	width: 30%;
+	right: 10%;
+	top: 3rem;
+	z-index: 1;
+}
+.section-contact-form-title {
+	color: white;
+}
+.section-contact-form-input {
+	display: block;
+	width: 100%;
+	border: 0;
+	border-radius: .15rem;
+	line-height: 2;
+	margin-bottom: 1rem;
+	background: rgba(255,255,255,.05);
+	padding-left: .5rem;
+}
+.section-contact-form-submit {
+	margin-top: .75rem;
+}
 
 
 .site-footer {
@@ -352,6 +416,7 @@ h6 {
 	color: white;
 	background: #131314;
 	text-align: center;
+	font-weight: 400;
 }
 
 .site-footer a {

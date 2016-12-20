@@ -5,6 +5,8 @@ body {
 	color: gray;
 }
 
+body, .smooth-container { scroll-behavior: smooth }
+
 * {
 	box-sizing: border-box;
 }
@@ -48,11 +50,10 @@ h6 {
 	font-family: "Open Sans",sans-serif;
 	font-weight: 700;
 	color: rgb(0, 164, 220);
-	font-size: 12px;
-	line-height: 22px;
-	letter-spacing: 2px;
+	font-size: .875rem;
+	line-height: 1.6;
+	letter-spacing: .15ex;
 	text-align: center;
-	text-transform: uppercase;
 	background-color: rgba(0, 0, 0, 0);
 	border: 1px solid rgb(0, 164, 220);
 	cursor: pointer;
@@ -74,13 +75,13 @@ h6 {
 }
 
 .button-junction {
-	padding: 1rem;
+	padding: 1rem .75rem;
 	display: inline-block;
 }
 
 
 .centered {
-	max-width: 940px;
+	max-width: 960px;
 	margin: auto;
 }
 
@@ -95,6 +96,7 @@ h6 {
 }
 .site-header .centered {
 	position: relative;
+	height: 6rem;
 }
 .site-logo {
 	position: absolute;
@@ -103,23 +105,40 @@ h6 {
 	color: white;
 	text-decoration: none;
 	font-size: 2rem;
+	font-weight: 200;
+	line-height: 6rem;
+	outline: none;
+}
+.site-logo strong {
 	font-weight: 900;
 }
 .site-nav {
 	position: absolute;
 	right: 0;
 	color: white;
+	line-height: 6rem;
 }
 .site-nav-link {
 	color: white;
+	font-weight: 400;
+	margin-left: 1.6rem;
 	text-decoration: none;
+	text-transform: uppercase;
+	font-size: .85rem;
+	letter-spacing: .15ex;
+}
+.site-nav-link {
+	border-bottom: 1px solid rgba(255,255,255,.15);
+}
+.site-nav-link:hover, .site-nav-link:active {
+	border-bottom: 1px solid rgba(255,255,255,1);
 }
 
 
 
 
 .section {
-	padding: 3rem 0;
+	padding: 3.2rem 0;
 	clear: both;
 }
 .section--gray {
@@ -130,11 +149,13 @@ h6 {
 
 .section-header {
 	text-align: center;
-	max-width: 40rem;
+	max-width: 50rem;
 	margin: auto;
 }
 .section-header .section-header-icon {
 	font-size: 2.4rem;
+	margin-bottom: 1.2rem;
+	opacity: .8;
 }
 .section-title {
 	font-size: 2.4rem;
@@ -143,8 +164,9 @@ h6 {
 }
 .section-subtitle {
 	color: gray;
-	font-weight: 100;
-	font-size: 1.1rem;
+	font-weight: 200;
+	font-size: 1.13rem;
+	margin-bottom: 1.6rem;
 }
 
 .section-dash {
@@ -168,19 +190,27 @@ h6 {
 	background-image: url('./main.jpg');
 	background-size: cover;
 	background-position: center center;
-	height: 80vh;
-	min-height: 30rem;
+	height: 82vh;
+	min-height: 32rem;
 	position: relative;
 }
 
 .section-intro-body {
-	position: absolute;
-	bottom: 0;
+	margin-top: 10rem;
 }
 .section-intro-title {
-	text-transform: uppercase;
-	font-size: 2rem;
-	width: 80%;
+	font-size: 2.6rem;
+	margin-bottom: 2rem;
+}
+.section-intro-body .button {
+	font-size: 1.1rem;
+	line-height: 2.2rem;
+	border-radius: 4rem;
+}
+
+.section-intro-junction {
+	padding: 1.4rem;
+	display: inline-block;
 }
 
 
@@ -261,17 +291,17 @@ h6 {
 .section-features-image {
 	display: inline-block;
 	vertical-align: bottom;
-	max-width: 40%;
+	max-width: 30%;
 }
 .section-features--left {
 	text-align: right;
-	width: 30%;
-	padding-right: 2rem;
+	width: 35%;
+	padding-right: 3rem;
 }
 .section-features--right {
 	text-align: left;
-	width: 30%;
-	padding-left: 2rem;
+	width: 35%;
+	padding-left: 3rem;
 }
 .section-feature > i {
 	font-size: 2.8rem;
@@ -287,6 +317,8 @@ h6 {
 
 
 .section--cta {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
     background-image: linear-gradient(to right, rgb(0, 164, 220) 0%, rgb(85, 77, 153) 100%);
 }
 
@@ -297,15 +329,21 @@ h6 {
 }
 
 
+.section-testimonials {
+	margin-top: 2.4rem;
+}
 .section-testimonial {
 	text-align: center;
 	max-width: 60%;
 	margin: 0 2rem;
 }
+.section-testimonial-text {
+	font-size: 1.13rem;
+}
 .section-testimonial-author {
 	text-align: left;
 	display: inline-block;
-	margin-top: 1rem;
+	margin-top: 1.6rem;
 }
 .section-testimonial-link {
 	text-decoration: none;
@@ -319,11 +357,13 @@ h6 {
 }
 .section-testimonial-name {
 	font-weight: 900;
-	font-size: 1.1rem;
+	font-size: .82rem;
 	color: #554D99;
+	text-transform: uppercase;
+	letter-spacing: .15ex;
 }
 .section-testimonial-bio {
-	font-size: 1rem;
+	font-size: .88rem;
 	color: gray;
 }
 
@@ -347,8 +387,8 @@ h6 {
 
 .section--contacts {
 	padding: 0;
-	height: 40vh;
-	min-height: 30rem;
+	height: 82vh;
+	min-height: 32rem;
 	position: relative;
 }
 .section-map {
@@ -401,7 +441,7 @@ h6 {
 	width: 100%;
 	border: 0;
 	border-radius: .15rem;
-	line-height: 2;
+	line-height: 2.4rem;
 	margin-bottom: 1rem;
 	background: rgba(255,255,255,.05);
 	padding-left: .5rem;

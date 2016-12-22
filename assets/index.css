@@ -385,6 +385,11 @@ p {
 	bottom: 0;
 	top: 0;
 }
+@media (max-width: 960px) {
+	.section-intro-slider-nav {
+		display: none;
+	}
+}
 .section-intro-slider-nav .centered {
 	position: relative;
 	height: 100%;
@@ -652,6 +657,7 @@ p {
 	text-align: left;
 	display: inline-block;
 	margin-top: 2.4rem;
+	min-width: 13rem;
 }
 .section-testimonial-link {
 	text-decoration: none;

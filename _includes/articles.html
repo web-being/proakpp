@@ -7,7 +7,7 @@
 		</header>
 
 		<div class="section-articles">
-			{% for post in include.posts %}<article class="section-article" itemscope itemtype="http://schema.org/BlogPosting">
+			{% for post in posts %}<article class="section-article" itemscope itemtype="http://schema.org/BlogPosting">
 				<a class="section-article-link" href="{{ post.url | prepend: site.baseurl }}">
 					{% if post.image %}
 					<figure class="section-article-figure">

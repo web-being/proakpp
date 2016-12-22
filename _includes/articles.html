@@ -1,12 +1,12 @@
 <section id="articles" class="section section--articles section--gray">
 	<div class="centered">
 		<header class="section-header">
-			<h3 class="section-title" data-lang="en">Полезно знать</h3>
-			<hr class="section-dash"/>
-			<div class="section-subtitle" data-lang="en">Знания, которые вам помогут снизить расходы и продлить срок службы вашего автомобиля</div>
+			<h3 class="section-title" data-lang="en" data-aos="fade-up">Полезно знать</h3>
+			<hr class="section-dash" data-aos="fade-up" data-aos-delay="100"/>
+			<div class="section-subtitle" data-lang="en" data-aos="fade-up" data-aos-delay="200">Знания, которые вам помогут снизить расходы и продлить срок службы вашего автомобиля</div>
 		</header>
 
-		<div class="section-articles">
+		<div class="section-articles" data-aos="fade-up" data-aos-delay="300">
 			{% for post in site.posts %}<article class="section-article" itemscope itemtype="http://schema.org/BlogPosting">
 				<a class="section-article-link" href="{{ post.url | prepend: site.baseurl }}">
 					{% if post.image %}

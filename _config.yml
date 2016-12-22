@@ -57,6 +57,21 @@ prose:
           help: "This will enable comments for the post"
           value: false
 
+months:
+  ru:
+    - Января
+    - Февраля
+    - Марта
+    - Апреля
+    - Мая
+    - Июня
+    - Июля
+    - Августа
+    - Сентября
+    - Октября
+    - Ноября
+    - Декабря
+
 t:
   en:
     home: "Home"

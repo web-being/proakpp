@@ -6,16 +6,26 @@
 			<div class="section-subtitle" data-lang="en">Знания, которые вам помогут снизить расходы и продлить срок службы вашего автомобиля</div>
 		</header>
 
-		<div class="section-artivles">
-			<article class="section-article">
-				<a class="section-article-link" href="/">
-					<img class="section-article-image" src="/"/>
+		<div class="section-articles">
+			{% for post in include.posts %}<article class="section-article" itemscope itemtype="http://schema.org/BlogPosting">
+				<a class="section-article-link" href="{{ post.url | prepend: site.baseurl }}">
+					{% if post.image %}
+					<figure class="section-article-figure">
+						<img class="section-article-image" src="{{ post.image }}" alt="{{ post.title }}"/>
+					</figure>
+					{% endif %}
+					<h4 class="section-article-title">{{ post.title }}</h4>
 				</a>
-				<h4 class="section-article-title"></h4>
-				<div class="section-article-body">
-
+				<time class="section-article-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+					{{ post.date | date: "%-d" }}
+					{% assign m = post.date | date: "%-m" | minus: 1 %}
+					{{ site.months.ru[m] }}
+					{{ post.date | date: "%Y" }}
+				</time>
+				<div class="section-article-excerpt">
+					{{ post.excerpt | strip_html | truncatewords: 30 }}
 				</div>
-			</article>
+			</article>{% endfor %}
 		</div>
 
 		<footer class="section-footer">

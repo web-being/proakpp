@@ -730,11 +730,11 @@ p {
 	display: block;
 	min-height: 100%;
 	min-width: 100%;
-	transition: .25s ease-out transform;
+	transition: .5s ease-out transform;
 	transform: scale(1);
 }
 .section-article-link:hover .section-article-image {
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 .section-article-title {

@@ -30,6 +30,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 1.6rem 0 1.2rem;
 	font-weight: 200;
 	color: black;
+	line-height: 1.13;
 }
 h1 {
 	font-size: 2.4rem;
@@ -241,12 +242,10 @@ p {
 	transition: .15s ease-out;
 	opacity: .82;
 	border-bottom: 1px solid rgba(255,255,255,.15);
-	border: none;
 }
 .site-nav-link:hover, .site-nav-link:active {
 	opacity: 1;
-	box-shadow:0 1px 0 rgba(255,255,255,1);
-	border: none;
+	border-bottom: 1px solid rgba(255,255,255,1);
 }
 @media (max-width: 960px) {
 	.site-nav {
@@ -294,7 +293,7 @@ p {
 }
 .section-title {
 	font-size: 2.4rem;
-	line-height: 1.1;
+	line-height: 1.13;
 	font-weight: 200;
 	margin-bottom: 1.2rem;
 }

@@ -612,10 +612,10 @@ p {
 .section-feature > i {
 	font-size: 2.8rem;
 	line-height: 4.8rem;
-	color: #554D99;
+	color: rgb(85, 77, 153);
 }
 .section-feature-title {
-	color: #554D99;
+	color: rgb(85, 77, 153);
 	font-size: 1.3rem;
 	font-weight: 200;
 }
@@ -682,12 +682,12 @@ p {
 	font-weight: 900;
 	margin-top: .2rem;
 	font-size: .82rem;
-	color: #554D99;
+	color: rgb(85, 77, 153);
 	text-transform: uppercase;
 	letter-spacing: .15ex;
 }
 .section-testimonial-bio {
-	font-size: .88rem;
+	font-size: .875rem;
 	color: gray;
 }
 
@@ -706,7 +706,9 @@ p {
 .section--testimonials {
 	overflow: hidden;
 }
-
+.section-testimonials .swiper-pagination-bullet-active {
+	background-color: rgb(85, 77, 153);
+}
 
 .section-articles {
 	margin-top: 3.2rem;
@@ -716,7 +718,7 @@ p {
 	display: inline-block;
 	width: 33.3%;
 	vertical-align: top;
-	padding: 0 1rem 3.2rem;
+	padding: 0 .8rem 3.2rem;
 }
 
 @media (max-width: 960px) {
@@ -746,14 +748,14 @@ p {
 }
 
 .section-article-title {
-	margin: 1.2rem 1rem .6rem;
+	margin: 2rem 1rem .8rem;
 }
 
 .section-article-date {
 	display: block;
-	margin: .6rem 1rem;
+	margin: .8rem 1rem;
 	text-transform: uppercase;
-	font-size: .95rem;
+	font-size: .875rem;
 }
 
 .section-article-excerpt {
@@ -768,12 +770,16 @@ p {
 	min-height: 32rem;
 	position: relative;
 }
+.section-map-content {
+	padding: .4rem;
+}
 .section-map {
 	width: 100%;
 	height: 100%;
 }
 .section-map-title {
 	font-weight: 200;
+	font-size: 1.6rem;
 	margin: .5rem 0;
 }
 .section-map-title strong {

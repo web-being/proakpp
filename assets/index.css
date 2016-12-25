@@ -75,6 +75,7 @@ p {
 	border: 1px solid rgb(0, 164, 220);
 	cursor: pointer;
 	text-decoration: none;
+	transform: scale(1);
 }
 .button--outline {
 	border-color: rgb(255, 255, 255);
@@ -89,6 +90,7 @@ p {
 	background: rgb(0, 164, 220);
 	border-color: rgb(0, 164, 220);
 	color: rgb(255, 255, 255);
+	transform: scale(1.05);
 }
 
 .button-junction {
@@ -296,6 +298,7 @@ p {
 	line-height: 1.13;
 	font-weight: 200;
 	margin-bottom: 1.2rem;
+	margin-top: 0;
 }
 .section-subtitle {
 	color: gray;
@@ -416,12 +419,6 @@ p {
 .section-intro-header {
 	margin-top: 4.8rem;
 	max-width: 50%;
-
-	-webkit-animation: fadein 2s, slidein 1.5s;
-	-moz-animation: fadein 2s, slidein 1.5s;
-	-ms-animation: fadein 2s, slidein 1.5s;
-	-o-animation: fadein 2s, slidein 1.5s;
-	animation: fadein 2s, slidein 1.5s;
 }
 .section-intro-title {
 	font-size: 2.6rem;
@@ -439,23 +436,6 @@ p {
 .section-intro-body {
 	margin-top: 2.4rem;
 	text-align: center;
-
-	-webkit-animation: fadein 2s, slidein 1.5s;
-	-moz-animation: fadein 2s, slidein 1.5s;
-	-ms-animation: fadein 2s, slidein 1.5s;
-	-o-animation: fadein 2s, slidein 1.5s;
-	animation: fadein 2s, slidein 1.5s;
-
-	-webkit-animation-delay: .5s;
-	-moz-animation-delay: .5s;
-	-ms-animation-delay: .5s;
-	-o-animation-delay: .5s;
-	animation-delay: .5s;
-	-webkit-animation-fill-mode: both;
-	-moz-animation-fill-mode: both;
-	-ms-animation-fill-mode: both;
-	-o-animation-fill-mode: both;
-	animation-fill-mode: both;
 }
 .section-intro-body .button {
 	font-size: 1.13rem;
@@ -500,6 +480,21 @@ p {
 		margin-top: 1.6rem;
 	}
 }
+
+
+
+.section-member {
+	width: 33.3%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	padding: 0 .8rem;
+}
+.section-member-image {
+	display: block;
+	width: 100%;
+}
+
 
 
 

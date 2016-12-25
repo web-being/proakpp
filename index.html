@@ -1,7 +1,6 @@
 ---
 layout: default
 ref: index
-lang: en
 ---
 
 
@@ -13,8 +12,7 @@ lang: en
 {% include cta.html %}
 <!-- {% include team.html %} -->
 {% include testimonials.html %}
-{% assign posts=site.posts | where:"lang", lang %}
-{% include articles.html posts=posts%}
+{% include articles.html%}
 {% include info.html %}
 {% include contacts.html %}
 

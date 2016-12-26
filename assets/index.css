@@ -366,6 +366,11 @@ p, ul {
 	-ms-animation: zoomout 3s;
 	-o-animation: zoomout 3s;
 	animation: zoomout 3s;
+	-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-ms-animation-delay: .2s;
+	-o-animation-delay: .2s;
+	animation-delay: .2s;
 }
 .section-intro-slide-1:before {
 	background-image: url(./intro-1.jpg);

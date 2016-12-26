@@ -17,14 +17,25 @@ body, .smooth-container { scroll-behavior: smooth }
 	box-sizing: border-box;
 }
 
-a {
+a, .link {
 	text-decoration: none;
 	color: rgb(85, 77, 153);
 	border-bottom: 1px solid rgba(85, 77, 153, .15);
 }
-a:hover, a:active {
+a:hover, a:active, .link:hover, .link:active {
 	border-bottom: 1px solid rgb(85, 77, 153);
 }
+
+.link--blue {
+	color: rgb(0, 164, 220);
+	border-bottom: 1px solid rgba(0, 164, 220, .15);
+}
+.link--blue:hover, .link--blue:active {
+	border-bottom: 1px solid rgba(0, 164, 220, 1);
+}
+
+::-moz-selection { background: rgb(0, 164, 220); color: white; }
+::selection { background: rgb(0, 164, 220); color: white; }
 
 h1,h2,h3,h4,h5,h6 {
 	margin: 1.6rem 0 1.2rem;
@@ -751,7 +762,7 @@ p, ul {
 }
 
 .section-article-title {
-	margin: 2rem 1rem .8rem;
+	margin: 1.6rem .8rem .8rem;
 }
 
 .section-article-date {

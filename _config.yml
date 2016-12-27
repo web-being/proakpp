@@ -26,9 +26,9 @@ defaults:
     - {scope: {path: ""}, values: {layout: "post"}}
 
 prose:
-  rooturl: ''
+  rooturl: '_posts'
   siteurl: 'http://proakpp.ru'
-  media: 'img'
+  media: 'assets'
   ignore: ['CNAME', '_config.yml', '*.json', '.gitignore', 'readme.md', '*.xml', 'admin.html']
   metadata:
     _posts:

@@ -66,6 +66,10 @@ p, ul {
 	margin: .8rem 0;
 }
 
+[hidden] {
+	display: none!important;
+}
+
 .button {
 	border-radius: 4rem;
 	box-sizing: border-box;
@@ -870,6 +874,20 @@ h4.section-title {
 
 .section-article-excerpt {
 	margin: 1.2rem 1rem .6rem;
+}
+
+
+
+
+.section--faq .section-body {
+	text-align: left;
+}
+.section--faq h1,
+.section--faq h2,
+.section--faq h3,
+.section--faq h4,
+.section--faq h5,
+.section--faq h6 {
 }
 
 

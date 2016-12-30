@@ -7,7 +7,7 @@
 		</header>
 
 		<div class="section-articles" data-aos="fade-up" data-aos-delay="300">
-			{% for post in site.posts %}<article class="section-article" itemscope itemtype="http://schema.org/BlogPosting">
+			{% for post in site.posts %}<article class="section-article" itemscope itemtype="http://schema.org/BlogPosting" {% if post.hidden %}hidden{% endif %}>
 				<a class="section-article-link" href="{{ post.url | prepend: site.baseurl }}">
 					{% if post.image %}
 					<figure class="section-article-figure">

@@ -947,6 +947,8 @@ h4.section-title {
 }
 .section-map-content {
 	padding: .4rem;
+	font-size: 1rem;
+	font-weight: 300;
 }
 .section-map {
 	width: 100%;
@@ -954,8 +956,8 @@ h4.section-title {
 }
 .section-map-title {
 	font-weight: 200;
-	font-size: 1.6rem;
-	margin: .5rem 0;
+	font-size: 2rem;
+	margin: .4rem 0;
 }
 .section-map-title strong {
 	font-weight: 900;

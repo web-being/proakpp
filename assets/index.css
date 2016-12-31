@@ -380,6 +380,7 @@ h4.section-title {
 .section-intro-slide:before {
 	content: '';
 	position: absolute;
+	filter: grayscale(50%);
 	top: 0;
 	left: 0;
 	bottom: 0;

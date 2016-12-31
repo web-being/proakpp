@@ -529,6 +529,13 @@ h4.section-title {
 
 
 
+.section--services a, .section--services a:visited {
+	color: #00A4DC;
+	border-bottom: 1px solid rgba(0, 164, 220, .15);
+}
+.section--services a:hover, .section--services a:active {
+	border-bottom: 1px solid rgba(0, 164, 220, 1);
+}
 .section-services {
 	padding: 0;
 	white-space: nowrap;
@@ -672,6 +679,13 @@ h4.section-title {
 }
 .section--inverse .section-subtitle {
 	color: white;
+}
+.section--inverse a, .section--inverse a:visited {
+	color: white;
+	border-bottom: 1px solid rgba(255,255,255,.15);
+}
+.section--inverse a:hover, .section--inverse a:active {
+	border-bottom: 1px solid rgba(255,255,255,1);
 }
 
 .section--features {

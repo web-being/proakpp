@@ -242,7 +242,7 @@ p, ul {
 .site-nav-link {
 	color: white;
 	font-weight: 200;
-	margin-left: 1.2rem;
+	margin: 0 .6rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: .82rem;
@@ -258,6 +258,16 @@ p, ul {
 .site-nav-link:hover, .site-nav-link:active {
 	opacity: 1;
 	border-bottom: 1px solid rgba(255,255,255,1);
+}
+.site-nav-divider {
+	margin: 0 .9rem;
+	font-weight: 100;
+	opacity: .25;
+}
+.site-nav-link--social {
+	border: none;
+	margin-left: .6rem;
+	margin-right: .6rem;
 }
 @media (max-width: 767px) {
 	.site-header .centered {

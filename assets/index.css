@@ -680,11 +680,11 @@ h4.section-title {
 .section--inverse .section-subtitle {
 	color: white;
 }
-.section--inverse a, .section--inverse a:visited {
+.section--inverse a:not(.button), .section--inverse a:not(.button):visited {
 	color: white;
 	border-bottom: 1px solid rgba(255,255,255,.15);
 }
-.section--inverse a:hover, .section--inverse a:active {
+.section--inverse a:not(.button):hover, .section--inverse a:not(.button):active {
 	border-bottom: 1px solid rgba(255,255,255,1);
 }
 

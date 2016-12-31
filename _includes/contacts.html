@@ -16,12 +16,10 @@
 	After you sign up, use the following script tag with YOUR_GOOGLE_API_KEY replaced with your actual key.
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY"></script>
 -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDh1gTWO5V-HZl2T_9iXLCDPcuLt8aXNc"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDh1gTWO5V-HZl2T_9iXLCDPcuLt8aXNc&callback=initMap" async defer></script>
 
 <script type="text/javascript">
-	google.maps.event.addDomListener(window, 'load', init);
-
-	function init() {
+	function initMap() {
 		// Basic options for a simple Google Map
 		// For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
 		var mapOptions = {

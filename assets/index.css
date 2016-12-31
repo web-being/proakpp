@@ -264,8 +264,6 @@ p, ul {
 	font-weight: 100;
 	opacity: .25;
 	line-height: 1.3rem;
-    display: inline-block;
-    vertical-align: top;
 }
 .site-nav-link--social {
 	border: none;
@@ -273,6 +271,10 @@ p, ul {
 	margin-right: .6rem;
 }
 @media (max-width: 767px) {
+	.site-nav-divider {
+		display: inline-block;
+		vertical-align: top;
+	}
 	.site-header .centered {
 		height: 8rem;
 	}

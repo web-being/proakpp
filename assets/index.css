@@ -263,6 +263,9 @@ p, ul {
 	margin: 0 .9rem;
 	font-weight: 100;
 	opacity: .25;
+	line-height: 1.3rem;
+    display: inline-block;
+    vertical-align: top;
 }
 .site-nav-link--social {
 	border: none;

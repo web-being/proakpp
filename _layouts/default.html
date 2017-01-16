@@ -4,10 +4,8 @@
 
 	{% include head.html %}
 
-	<script src="{{ "/assets/swiper.js" | prepend: site.baseurl }}" async defer></script>
 	<script src="{{ '/assets/zenscroll.js' | prepend: site.baseurl }}" async defer></script>
 	<script src="{{ "/assets/aos.js" | prepend: site.baseurl }}" async defer></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDh1gTWO5V-HZl2T_9iXLCDPcuLt8aXNc&callback=initMap" async defer></script>
 
 	<body class="page {{ layout.type }}">
 		{% include header.html %}
@@ -38,4 +36,8 @@
 	<link rel="stylesheet" href="{{ "/assets/font-awesome.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/assets/swiper.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ '/assets/aos.css' | prepend: site.baseurl }}">
+
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDh1gTWO5V-HZl2T_9iXLCDPcuLt8aXNc&callback=initMap" async defer></script>
+	<script src="{{ "/assets/swiper.js" | prepend: site.baseurl }}" async defer></script>
 </html>

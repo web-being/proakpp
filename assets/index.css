@@ -529,19 +529,60 @@ h4.section-title {
 }
 
 
-
+.section-members {
+	margin-top: 3.2rem;
+}
 .section-member {
-	width: 33.3%;
+	width: 42%;
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
 	padding: 0 .8rem;
+	text-align: left;
 }
 .section-member-image {
 	display: block;
 	width: 100%;
 }
-
+.section-member-title {
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 1.13rem;
+	letter-spacing: .075ex;
+	margin: 1.6rem 1rem .8rem;
+}
+.section-member-subtitle {
+	display: block;
+	margin: .8rem 1rem;
+	text-transform: uppercase;
+	font-size: .875rem;
+}
+.section-member-description {
+	margin: .6rem 1rem .6rem;
+}
+.section-member-social {
+	margin: 1.2rem 1rem .6rem;
+}
+.section-member-social-link {
+	text-align: center;
+	line-height: 1.6rem;
+	border-bottom: none!important;
+	background: #AFB0B2;
+	color: white;
+	border-radius: .2rem;
+	padding: 0;
+	transition: .25s linear;
+	width: 1.6rem;
+	height: 1.6rem;
+	display: inline-block;
+	margin-right: .2rem;
+}
+.section-member-social-link:hover {
+	background: #554D99;
+}
+.section-member-social-link i {
+	border: none;
+}
 
 
 

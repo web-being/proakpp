@@ -539,6 +539,7 @@ h4.section-title {
 	position: relative;
 	padding: 0 .8rem;
 	text-align: left;
+	margin-bottom: 3.2rem;
 }
 .section-member-image {
 	display: block;
@@ -582,6 +583,12 @@ h4.section-title {
 }
 .section-member-social-link i {
 	border: none;
+}
+
+@media (max-width: 767px) {
+	.section-member {
+		width: 100%;
+	}
 }
 
 
@@ -808,7 +815,7 @@ h4.section-title {
 }
 @media (max-width: 767px) {
 	.section--features .section-body {
-		padding-bottom: 17rem;
+		padding-bottom: 44vh;
 		position: relative;
 	}
 	.section-features {

@@ -201,7 +201,7 @@ p, ul {
 
 
 
-.logo {
+.section--intro .logo {
     opacity: .82;
     max-width: 42%;
 	min-width: 20rem;
@@ -209,6 +209,12 @@ p, ul {
     text-align: center;
     display: block;
     margin: 0 auto 1rem;
+}
+
+@media (max-width: 767px) {
+	.section--intro .logo {
+		display: none;
+	}
 }
 
 

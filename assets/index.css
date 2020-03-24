@@ -201,6 +201,15 @@ p, ul {
 
 
 
+.logo {
+    opacity: .82;
+    max-width: 42%;
+	min-width: 20rem;
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 0 auto 1rem;
+}
 
 
 .site-header {

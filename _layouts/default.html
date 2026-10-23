@@ -19,6 +19,25 @@
 	</body>
 
 	<script type="text/javascript">
+		// horizontal wheel / trackpad scrolls swiper, vertical scrolls the page
+		function wheel(sw) {
+			sw.container[0].addEventListener('wheel', function (e) {
+				var dx = e.deltaX * (e.deltaMode ? 16 : 1)
+				if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return
+				e.preventDefault()
+				if (sw.params.autoplayDisableOnInteraction) sw.stopAutoplay()
+				var i = sw.activeIndex, x = sw.getWrapperTranslate()
+				if (sw.params.loop) sw.fixLoop(), x += sw.slidesGrid[i] - sw.slidesGrid[sw.activeIndex]
+				x = Math.min(sw.minTranslate(), Math.max(sw.maxTranslate(), x - dx))
+				sw.animating = false
+				sw.setWrapperTransition(0)
+				sw.setWrapperTranslate(x)
+				sw.updateProgress()
+				sw.updateActiveIndex()
+				sw.updateClasses()
+			}, {passive: false})
+		}
+
 		window.addEventListener('load', function () {
 			//animate on scroll
 			AOS.init({

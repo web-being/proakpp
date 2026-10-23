@@ -1,93 +1,36 @@
 <section id="brands" class="section section--brands section--gray">
 	<header class="section-header">
 		<h4 class="section-title" data-lang="en" data-aos="fade-up">Автобренды, с которыми мы работаем</h4>
-		<hr class="section-dash" data-aos="fade-up" data-aos-delay="100"/>
+		<hr class="section-dash" data-aos="fade-up" style="--i:1"/>
 	</header>
-	<div class="swiper-container section-brands" data-aos="fade-up" data-aos-delay="200">
-		<div class="swiper-wrapper">
-			<div class="swiper-slide section-brand">
-				<img src="assets/landrover.webp" title="Land Rover" alt="Land Rover" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/jaguar.webp" title="Jaguar" alt="Jaguar" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/nissan.webp" title="Nissan" alt="Nissan" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/mitsubishi.webp" title="Mitsubishi" alt="Mitsubishi" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/toyota.webp" title="Toyota" alt="Toyota" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/lexus.webp" title="Lexus" alt="Lexus" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/mazda.webp" title="Mazda" alt="Mazda" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/honda.webp" title="Honda" alt="Honda" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/subaru.webp" title="Subaru" alt="Subaru" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/infiniti.webp" title="Infiniti" alt="Infiniti" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/kia.webp" title="Kia" alt="Kia" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/hyundai.webp" title="Hyundai" alt="Hyundai" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/mercedes.webp" title="Mercedes" alt="Mercedes" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/audi.webp" title="Audi" alt="Audi" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/bmw.webp" title="BMW" alt="BMW" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/vw.webp" title="Volkswagen" alt="Volkswagen" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/opel.webp" title="Opel" alt="Opel" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/porsche.webp" title="Porsche" alt="Porsche" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/skoda.webp" title="Skoda" alt="Skoda" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/peugeot.webp" title="Peugeot" alt="Peugeot" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/renault.webp" title="Renault" alt="Renault" class="section-brand-image"/>
-			</div>
-			<div class="swiper-slide section-brand">
-				<img src="assets/citroen.webp" title="Citroen" alt="Citroen" class="section-brand-image"/>
-			</div>
+	{% capture brands %}
+		<img src="assets/landrover.webp" title="Land Rover" alt="Land Rover" class="section-brand-image"/>
+		<img src="assets/jaguar.webp" title="Jaguar" alt="Jaguar" class="section-brand-image"/>
+		<img src="assets/nissan.webp" title="Nissan" alt="Nissan" class="section-brand-image"/>
+		<img src="assets/mitsubishi.webp" title="Mitsubishi" alt="Mitsubishi" class="section-brand-image"/>
+		<img src="assets/toyota.webp" title="Toyota" alt="Toyota" class="section-brand-image"/>
+		<img src="assets/lexus.webp" title="Lexus" alt="Lexus" class="section-brand-image"/>
+		<img src="assets/mazda.webp" title="Mazda" alt="Mazda" class="section-brand-image"/>
+		<img src="assets/honda.webp" title="Honda" alt="Honda" class="section-brand-image"/>
+		<img src="assets/subaru.webp" title="Subaru" alt="Subaru" class="section-brand-image"/>
+		<img src="assets/infiniti.webp" title="Infiniti" alt="Infiniti" class="section-brand-image"/>
+		<img src="assets/kia.webp" title="Kia" alt="Kia" class="section-brand-image"/>
+		<img src="assets/hyundai.webp" title="Hyundai" alt="Hyundai" class="section-brand-image"/>
+		<img src="assets/mercedes.webp" title="Mercedes" alt="Mercedes" class="section-brand-image"/>
+		<img src="assets/audi.webp" title="Audi" alt="Audi" class="section-brand-image"/>
+		<img src="assets/bmw.webp" title="BMW" alt="BMW" class="section-brand-image"/>
+		<img src="assets/vw.webp" title="Volkswagen" alt="Volkswagen" class="section-brand-image"/>
+		<img src="assets/opel.webp" title="Opel" alt="Opel" class="section-brand-image"/>
+		<img src="assets/porsche.webp" title="Porsche" alt="Porsche" class="section-brand-image"/>
+		<img src="assets/skoda.webp" title="Skoda" alt="Skoda" class="section-brand-image"/>
+		<img src="assets/peugeot.webp" title="Peugeot" alt="Peugeot" class="section-brand-image"/>
+		<img src="assets/renault.webp" title="Renault" alt="Renault" class="section-brand-image"/>
+		<img src="assets/citroen.webp" title="Citroen" alt="Citroen" class="section-brand-image"/>
+	{% endcapture %}
+	<div class="section-brands" data-aos="fade-up" style="--i:2">
+		<div class="section-brands-track">
+			<div class="section-brands-set">{{ brands }}</div>
+			<div class="section-brands-set" aria-hidden="true">{{ brands }}</div>
 		</div>
 	</div>
-
-
-	<script type="text/javascript">
-		window.addEventListener('load', function () {
-			var mySwiper = new Swiper ('.section-brands', {
-				direction: 'horizontal',
-				loop: true,
-				speed: 1000,
-				autoplay: 1000,
-				centeredSlides: true,
-
-				slidesPerView: 'auto',
-				spaceBetween: 0
-			})
-			wheel(mySwiper)
-		})
-	</script>
 </section>

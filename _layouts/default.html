@@ -5,7 +5,7 @@
 	{% include head.html %}
 
 	<script src="{{ '/assets/zenscroll.js' | prepend: site.baseurl }}" async defer></script>
-	<script src="{{ "/assets/aos.js" | prepend: site.baseurl }}" async defer></script>
+	<script src="{{ "/assets/aos.js" | prepend: site.baseurl }}" defer></script>
 
 	<body class="page {{ layout.type }}">
 		{% include header.html %}
@@ -19,32 +19,8 @@
 	</body>
 
 	<script type="text/javascript">
-		// horizontal wheel / trackpad scrolls swiper, vertical scrolls the page
-		function wheel(sw) {
-			sw.container[0].addEventListener('wheel', function (e) {
-				var dx = e.deltaX * (e.deltaMode ? 16 : 1)
-				if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return
-				e.preventDefault()
-				if (sw.params.autoplayDisableOnInteraction) sw.stopAutoplay()
-				var i = sw.activeIndex, x = sw.getWrapperTranslate()
-				if (sw.params.loop) sw.fixLoop(), x += sw.slidesGrid[i] - sw.slidesGrid[sw.activeIndex]
-				x = Math.min(sw.minTranslate(), Math.max(sw.maxTranslate(), x - dx))
-				sw.animating = false
-				sw.setWrapperTransition(0)
-				sw.setWrapperTranslate(x)
-				sw.updateProgress()
-				sw.updateActiveIndex()
-				sw.updateClasses()
-			}, {passive: false})
-		}
-
-		window.addEventListener('load', function () {
-			//animate on scroll
-			AOS.init({
-				easing: 'ease-in-out-sine',
-				offset: -50,
-				duration: 1000
-			});
+		document.addEventListener('DOMContentLoaded', function () {
+			AOS.init({ once: true, offset: 40 })
 		})
 	</script>
 
@@ -53,7 +29,6 @@
 
 	<link rel="stylesheet" href="{{ "/assets/font-awesome.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/assets/swiper.css" | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ '/assets/aos.css' | prepend: site.baseurl }}">
 
 
 	<script src="{{ "/assets/swiper.js" | prepend: site.baseurl }}" async defer></script>

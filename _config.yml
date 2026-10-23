@@ -1,21 +1,22 @@
 title:
   en: PROAKPP
-  ru: ПРОАКПП
+  ru: ПроАКПП
 tagline:
   en:
-  ru:
+  ru: Ремонт АКПП и вариаторов в Санкт-Петербурге
 index:
   en: index-en.html
   ru: index.html
-email: proakpp@mail.com
+email: proakpp@mail.ru
 description:
   en:
-  ru:
+  ru: Ремонт и обслуживание автоматических коробок передач и вариаторов (CVT) любых марок. Диагностика, замена масла, ремонт. СПб, ул. Самойловой, 7. Будни 11–20.
 baseurl: ""
-url: "http://proakpp.ru"
+url: "https://proakpp.ru"
 twitter_username: proakpp
 github_username:  proakpp
 permalink: :title
+exclude: [package.json]
 
 markdown: kramdown
 

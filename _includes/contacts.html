@@ -1,4 +1,33 @@
 <section id="contacts" class="section section--inverse section--contacts">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "AutoRepair",
+		"name": "{{ site.title[lang] }}",
+		"description": "{{ site.description[lang] }}",
+		"url": "{{ site.url }}/",
+		"image": "{{ site.url }}/assets/og.jpg",
+		"telephone": ["+7-921-916-86-33", "+7-999-216-68-76"],
+		"email": "proakpp@mail.ru",
+		"legalName": "ИП Ульянов Павел Алексеевич",
+		"taxID": "781136807019",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "ул. Самойловой, 7",
+			"addressLocality": "Санкт-Петербург",
+			"postalCode": "192102",
+			"addressCountry": "RU"
+		},
+		"geo": {"@type": "GeoCoordinates", "latitude": 59.9030742, "longitude": 30.3732213},
+		"openingHoursSpecification": [{
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+			"opens": "11:00",
+			"closes": "20:00"
+		}],
+		"sameAs": ["https://vk.com/proakpp", "https://yandex.ru/maps/org/proakpp/59957352587/"]
+	}
+	</script>
 	<div class="centered">
 		<header class="section-header">
 			<h3 class="section-title">Контакты</h3>

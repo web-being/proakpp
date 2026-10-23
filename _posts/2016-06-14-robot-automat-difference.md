@@ -1,7 +1,7 @@
 ---
 published: true
 title: Чем робот отличается от автомата
-image: assets/handle-3.jpg
+image: assets/handle-3.webp
 comments: true
 lang: ru
 ---

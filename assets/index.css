@@ -415,13 +415,13 @@ h4.section-title {
 	animation-delay: .2s;
 }
 .section-intro-slide-1:before {
-	background-image: url(./intro-1.jpg);
+	background-image: url(./intro-1.webp);
 }
 .section-intro-slide-2:before {
-	background-image: url(./intro-3.jpg);
+	background-image: url(./intro-3.webp);
 }
 .section-intro-slide-3:before {
-	background-image: url(./intro-2.jpg);
+	background-image: url(./intro-2.webp);
 }
 .section-intro-slide:after {
 	content: '';
@@ -879,20 +879,7 @@ h4.section-title {
 	font-size: 1.13rem;
 }
 .section-testimonial-author {
-	text-align: left;
-	display: inline-block;
 	margin-top: 2.4rem;
-	min-width: 20rem;
-}
-.section-testimonial-link {
-	text-decoration: none;
-}
-.section-testimonial-image {
-	height: 4rem;
-	overflow: hidden;
-	border-radius: 4rem;
-	float: left;
-	margin-right: 1rem;
 }
 .section-testimonial-name {
 	font-weight: 900;
@@ -1035,83 +1022,101 @@ h4.section-title {
 
 
 .section--contacts {
-	padding: 0;
-	height: 82vh;
-	min-height: 32rem;
-	position: relative;
+	background: #131314;
+	padding-bottom: 0;
+	border-bottom: 1px solid rgba(255,255,255,.1);
 }
-.section-map-content {
-	padding: .4rem;
-	font-size: 1rem;
-	font-weight: 300;
+.section-contacts {
+	white-space: nowrap;
+}
+.section-contact {
+	white-space: normal;
+	width: 33.3%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 1rem;
+	font-style: normal;
+	line-height: 1.8;
+}
+.section-contact-title {
+	color: white;
+	font-weight: 700;
+	margin: 0 0 .6rem;
+}
+.section-map-wrap {
+	position: relative;
+	height: 24rem;
+	margin-top: 2.4rem;
+}
+.section--inverse .section-map-link {
+	display: block;
+	height: 100%;
+	border: none;
 }
 .section-map {
+	display: block;
 	width: 100%;
 	height: 100%;
 }
-.section-map-title {
-	font-weight: 200;
-	font-size: 2rem;
-	margin: .4rem 0;
+.section-map path {
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
 }
-.section-map-title strong {
-	font-weight: 900;
+.section-map .map-green { fill: #171b18; }
+.section-map .map-water { fill: #172630; }
+.section-map .map-river { stroke: #172630; stroke-width: 12; }
+.section-map .map-building { fill: #1d1e21; }
+.section-map .map-rail { stroke: #26272a; stroke-width: 2; stroke-dasharray: 8 6; }
+.section-map .map-minor { stroke: #222326; stroke-width: 2.5; }
+.section-map .map-road { stroke: #2b2c30; stroke-width: 6; }
+.section-map .map-main { stroke: #36373c; stroke-width: 10; }
+.section-map .map-target { fill: rgb(0, 164, 220); }
+.map-pin {
+	fill: rgb(0, 164, 220);
+	stroke: white;
+	stroke-width: 3;
 }
-.section-map-subtitle {
-	font-weight: 900;
-	font-size: 1rem;
-	margin: .75rem 0 0;
+.map-label, .map-pin-label {
+	font-family: Roboto, sans-serif;
+	paint-order: stroke;
+	stroke: #131314;
+	stroke-width: 4;
+	dominant-baseline: central;
 }
-.section-map-address {
-	font-style: normal;
+.map-label {
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: .05em;
+	fill: rgba(255,255,255,.5);
+	text-anchor: middle;
 }
-.section-map-content a, .section-map-content a:visited {
-	text-decoration: none;
-	color: black;
-	border-bottom: 1px solid rgba(0,0,0,.15);
+.map-pin-label {
+	font-size: 22px;
+	font-weight: 700;
+	fill: white;
 }
-.section-map-content a:hover {
-	border-bottom: 1px solid rgba(0,0,0,1);
-}
-.section-map-content p {
-	margin: .25rem 0;
-}
-
-.section--contacts .centered {
-	position: relative;
-}
-.section-contact-form {
+.section-map-credit {
 	position: absolute;
-	min-width: 20rem;
-	width: 30%;
-	right: 10%;
-	top: 3rem;
-	z-index: 1;
+	right: .6rem;
+	bottom: .4rem;
+	font-size: .75rem;
+	opacity: .5;
 }
 
 @media (max-width: 767px) {
-	.section-contact-form {
-		display: none;
+	.section-map-wrap {
+		margin: 0 -1.2rem;
 	}
-}
-
-
-.section-contact-form-title {
-	color: white;
-}
-.section-contact-form-input {
-	display: block;
-	width: 100%;
-	border: 0;
-	border-radius: .15rem;
-	line-height: 2.4rem;
-	margin-bottom: 1rem;
-	background: rgba(255,255,255,.05);
-	padding-left: .5rem;
-	color: white;
-}
-.section-contact-form-submit {
-	margin-top: .75rem;
+	.map-label { font-size: 26px; }
+	.map-pin-label { font-size: 36px; }
+	.section-contacts {
+		white-space: normal;
+	}
+	.section-contact {
+		width: 100%;
+		padding-bottom: 2rem;
+	}
 }
 
 
@@ -1123,6 +1128,12 @@ h4.section-title {
 	font-weight: 400;
 }
 
+.site-footer-legal {
+	margin: 0 0 .8rem;
+	font-size: .875rem;
+	font-weight: 300;
+	opacity: .6;
+}
 .site-footer a {
 	color: white;
 	text-decoration: none;

@@ -1,7 +1,7 @@
 ---
 published: true
 title: Профилактика АКПП
-image: assets/handle-2.jpg
+image: assets/handle-2.webp
 comments: true
 ---
 

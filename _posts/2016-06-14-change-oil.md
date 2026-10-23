@@ -1,6 +1,6 @@
 ---
 title: Как менять масло в АКПП
-image: assets/handle-1.jpg
+image: assets/handle-1.webp
 comments: true
 ---
 
